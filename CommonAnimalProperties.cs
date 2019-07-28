@@ -15,7 +15,7 @@ namespace Creating_A_Farm
         Saturday = -10,
         Sunday = Saturday,
     }
-    class Animals
+    public class Animals
     {
         public string name;
         public int age;

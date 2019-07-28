@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Creating_A_Farm
 {
-    class Dog : Animals
+    public class Dog : Animals
     {
         static Random R = new Random();
         double tailWagsPerSecond;

@@ -6,6 +6,7 @@ namespace Creating_A_Farm
     {
         static void DiningWithThePigs()
         {
+            Console.WriteLine("\nPigs");
             Pig tooBusyEating = new Pig();
             Pig friendlypig = new Pig("Sloppy Joe", "Ranch Dressing");
             friendlypig.JoinUs();
@@ -18,6 +19,7 @@ namespace Creating_A_Farm
         }
         static void LettingOutTheDogs()
         {
+            Console.WriteLine("\nDogs");
             Dog amanda = new Dog("Amanda", 7);
             amanda.DogHobby();
             amanda.GoodBye();
@@ -28,6 +30,7 @@ namespace Creating_A_Farm
         }
         static void VisitingTheDragons()
         {
+            Console.WriteLine("\nDragons");
             Dragon sandy = new Dragon();
             Dragon jasmine = new Dragon("Jasmine", 12, "protect gold", "fight the hero of a story");
             jasmine.Introduction();
@@ -35,6 +38,7 @@ namespace Creating_A_Farm
         }
         static void BringingInTheCows()
         {
+            Console.WriteLine("\nCows");
             Cow steve = new Cow("Steve", 34, "provide milk", "sleep and eat");
             steve.Introduction();
             steve.GallonsOfMilk();
