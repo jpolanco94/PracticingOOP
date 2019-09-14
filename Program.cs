@@ -7,12 +7,15 @@ namespace Creating_A_Farm
         static void DiningWithThePigs()
         {
             Console.WriteLine("\nPigs");
-            Pig tooBusyEating = new Pig();
-            Pig friendlypig = new Pig("Sloppy Joe", "Ranch Dressing");
+            Pig friendlypig = new Pig();
+            friendlypig.food1 = "slop";
+            friendlypig.food2 = "filet mignon";
+            Pig johnny = new Pig();
+            Pig dontae = new Pig();
             friendlypig.JoinUs();
-            Pig johnny = new Pig("Johnny", "eat", "sleep");
-            Pig dontae = new Pig("Johnny", "eat", "eat");
             dontae.Introduction();
+            johnny.name = "Johnny";
+            johnny.job = "eat";
             johnny.LeaderIntro();
             friendlypig.Eating();
             friendlypig.Drinking();
@@ -32,18 +35,29 @@ namespace Creating_A_Farm
         {
             Console.WriteLine("\nDragons");
             Dragon sandy = new Dragon();
-            Dragon jasmine = new Dragon("Jasmine", 12, "protect gold", "fight the hero of a story");
+            sandy.AnnoyedDragon();
+            Dragon jasmine = new Dragon();
+            jasmine.name = "Jasmine";
+            jasmine.age = 12;
+            jasmine.job = "provide heat";
+            jasmine.hobby = "battle the hero of a story";
             jasmine.Introduction();
             jasmine.DragonSpecialSkill();
         }
         static void BringingInTheCows()
         {
             Console.WriteLine("\nCows");
-            Cow steve = new Cow("Steve", 34, "provide milk", "sleep and eat");
+            Cow steve = new Cow();
+            steve.name = "Steve";
+            steve.age = 34;
+            steve.job = "provide milk";
+            steve.hobby = "play a mean drum solo";
             steve.Introduction();
             steve.GallonsOfMilk();
             steve.GrammarCow();
-            Cow melissa = new Cow("Melissa", 1);
+            Cow melissa = new Cow();
+            melissa.name = "Melissa";
+            melissa.age = 1;
             melissa.Introduction();
         }
         static void Main(string[] args)

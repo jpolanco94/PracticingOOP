@@ -17,9 +17,9 @@ namespace Creating_A_Farm
     }
     public class Animals
     {
-        public string name;
-        public int age;
-        public string job;
-        public string hobby;
+        public string name { get; set; }
+        public int age { get; set; }
+        public string job { get; set; }
+        public string hobby { get; set; }
     }
 }

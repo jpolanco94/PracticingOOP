@@ -7,30 +7,17 @@ namespace Creating_A_Farm
     class Pig : Animals
     {
         static Random W = new Random();
-        private string food1;
-        private string food2;
+        public string food1 {get; set;}
+        public string food2 { get; set; }
 
-        public Pig()
-        {
-            Console.WriteLine("\nNothing to see here.");
-        }
-        public Pig(string food1, string food2)
-        {
-            this.food1 = food1;
-            this.food2 = food2;
-        }
-        public Pig(string name, string job, string hobby)
-        {
-            this.name = name;
-            this.job = job;
-            this.hobby = hobby;
-        }
         public void JoinUs()
         {
             Console.WriteLine($"\nGrab some {food1} and {food2} and come join us");
         }
         public void Introduction()
-        { }
+        {
+            Console.WriteLine("Whats up");
+        }
             
         public void LeaderIntro()
         {
@@ -62,7 +49,7 @@ namespace Creating_A_Farm
         public void Drinking()
         {
             int water = NumberWaterDrank(Eating());
-            Console.WriteLine($"\nToday I drank {water} of water.");
+            Console.WriteLine($"\nToday I drank {water} gallons of water.");
         }
         
     }

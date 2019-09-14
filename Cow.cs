@@ -7,19 +7,9 @@ namespace Creating_A_Farm
     class Cow : Animals
     {
         //First constructor for Cow
-        public Cow(string name, int age, string job, string hobby)
-        {
-            this.name = name;
-            this.age = age;
-            this.job = job;
-            this.hobby = hobby;
-        }
+
         //Second constructor for Cow
-        public Cow(string name, int age)
-        {
-            this.name = name;
-            this.age = age;
-        }
+
         //Introduction method that gives you proper grammer dependendant on age
         public void Introduction()
         {

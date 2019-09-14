@@ -7,7 +7,7 @@ namespace Creating_A_Farm
     public class Dog : Animals
     {
         static Random R = new Random();
-        double tailWagsPerSecond;
+        public double tailWagsPerSecond { get; set; }
         public Dog(string name, int age)
         {
             this.name = name;
@@ -27,8 +27,8 @@ namespace Creating_A_Farm
         }
         public double TailWags(double maxTailWags)
         {
-            double tailwagsPerSecond = maxTailWags / 86400;
-            return tailwagsPerSecond;
+            tailWagsPerSecond = maxTailWags / 86400;
+            return tailWagsPerSecond;
         }
         public void DogHobby()
         {

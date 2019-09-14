@@ -7,17 +7,11 @@ namespace Creating_A_Farm
     class Dragon : Animals
     {
         //"default constructor" with WriteLine.
-        public Dragon()
+        public void AnnoyedDragon()
         {
             Console.WriteLine("\nAre you really trying to talk to a dragon?");
         }
-        public Dragon(string name, int age, string job, string hobby)
-        {
-            this.name = name;
-            this.age = age;
-            this.job = job;
-            this.hobby = hobby;
-        }
+
         //Just messing around with DateTime
         public void Introduction()
         {
